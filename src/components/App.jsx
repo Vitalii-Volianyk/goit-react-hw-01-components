@@ -9,11 +9,11 @@ import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
 
 export function App() {
-  switch (window.location.pathname) {
-    case '/task1':
+  switch (window.location.hash) {
+    case '#task1':
       return (
         <>
-          <a href="/">Go to list</a>
+          <a href="/goit-react-hw-01-components">Go to list</a>
           <Profile
             username={user.username}
             tag={user.tag}
@@ -23,25 +23,25 @@ export function App() {
           />
         </>
       );
-    case '/task2':
+    case '#task2':
       return (
         <>
-          <a href="/">Go to list</a>
+          <a href="/goit-react-hw-01-components">Go to list</a>
           <Statistics title="Upload stats" stats={data} />
           <Statistics stats={data} />
         </>
       );
-    case '/task3':
+    case '#task3':
       return (
         <>
-          <a href="/">Go to list</a>
+          <a href="/goit-react-hw-01-components">Go to list</a>
           <FriendList friends={friends} />
         </>
       );
-    case '/task4':
+    case '#task4':
       return (
         <>
-          <a href="/">Go to list</a>
+          <a href="/goit-react-hw-01-components">Go to list</a>
           <TransactionHistory data={transactions} />
         </>
       );
