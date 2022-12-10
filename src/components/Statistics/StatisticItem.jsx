@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 export default function StatisticsItem({ data }) {
   return (
     <li className="item">
@@ -6,3 +7,6 @@ export default function StatisticsItem({ data }) {
     </li>
   );
 }
+StatisticsItem.propTypes = {
+  data: PropTypes.object,
+};

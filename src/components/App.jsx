@@ -1,10 +1,12 @@
 import TaskList from './TaskList/TaskList';
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
-import Task3 from './Task3/Task3';
-import Task4 from './Task4/Task4';
+import FriendList from './FriendList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 import user from '../data/user.json';
 import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 export function App() {
   switch (window.location.pathname) {
@@ -33,14 +35,14 @@ export function App() {
       return (
         <>
           <a href="/">Go to list</a>
-          <Task3 />
+          <FriendList friends={friends} />
         </>
       );
     case '/task4':
       return (
         <>
           <a href="/">Go to list</a>
-          <Task4 />
+          <TransactionHistory data={transactions} />
         </>
       );
     default:
