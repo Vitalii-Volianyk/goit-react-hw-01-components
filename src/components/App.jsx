@@ -14,13 +14,43 @@ export function App() {
       return (
         <>
           <a href="/goit-react-hw-01-components">Go to list</a>
-          <Profile
-            username={user.username}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}
-          />
+          <div className="profiles">
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
+          </div>
         </>
       );
     case '#task2':
