@@ -1,4 +1,3 @@
-import TaskList from './TaskList/TaskList';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
