@@ -13,7 +13,7 @@ export function App() {
     case '#task1':
       return (
         <>
-          <a href="/goit-react-hw-01-components">Go to list</a>
+          <a href="/goit-react-hw-01-components#list">Go to list</a>
           <div className="profiles">
             <Profile
               username={user.username}
@@ -56,7 +56,7 @@ export function App() {
     case '#task2':
       return (
         <>
-          <a href="/goit-react-hw-01-components">Go to list</a>
+          <a href="/goit-react-hw-01-components#list">Go to list</a>
           <Statistics title="Upload stats" stats={data} />
           <Statistics stats={data} />
         </>
@@ -64,18 +64,34 @@ export function App() {
     case '#task3':
       return (
         <>
-          <a href="/goit-react-hw-01-components">Go to list</a>
+          <a href="/goit-react-hw-01-components#list">Go to list</a>
           <FriendList friends={friends} />
         </>
       );
     case '#task4':
       return (
         <>
-          <a href="/goit-react-hw-01-components">Go to list</a>
+          <a href="/goit-react-hw-01-components#list">Go to list</a>
           <TransactionHistory data={transactions} />
         </>
       );
-    default:
+    case '#list':
       return <TaskList />;
+    default:
+      return (
+        <>
+          <Profile
+            username={user.username}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+            stats={user.stats}
+          />
+          <Statistics title="Upload stats" stats={data} />
+          <Statistics stats={data} />
+          <FriendList friends={friends} />
+          <TransactionHistory data={transactions} />
+        </>
+      );
   }
 }
