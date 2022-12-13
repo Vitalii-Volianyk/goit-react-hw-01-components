@@ -1,12 +1,12 @@
 import { PropTypes } from 'prop-types';
-import './Statistics.css';
 import StatisticsItem from './StatisticItem';
+import css from './styles.module.css';
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
+    <section className={css.statistics}>
       {title && <h2 className="title">{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={css.stat_list}>
         {stats.map(item => (
           <StatisticsItem key={item.id} data={item} />
         ))}

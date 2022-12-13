@@ -6,7 +6,7 @@
   background-color: #f3f6f9;
   margin: 10px;
 }
-.stat-list {
+.stat_list {
   display: flex;
   list-style: none;
   padding: 0;
@@ -15,7 +15,7 @@
   width: 100%;
   border-radius: 0 0 5px 5px;
 }
-.stat-list li {
+.stat_list li {
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
